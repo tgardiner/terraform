@@ -26,7 +26,7 @@ provider "aws" {
 // MODULES
 
 module "vpc" {
-  source = "vpc"
+  source = "./vpc"
 
   name           = var.name
   region         = var.region
