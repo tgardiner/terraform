@@ -18,3 +18,11 @@ variable "vpc_subnet_netmask" {
   type        = number
   description = "The netmask of each subnet inside the VPC"
 }
+variable "openvpn_ami_id" {
+  type        = string
+  description = "The ID of the AMI"
+}
+variable "openvpn_instance_type" {
+  type        = string
+  description = "The size of instance"
+}
