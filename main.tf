@@ -35,12 +35,12 @@ module "vpc" {
   subnet_netmask = var.vpc_subnet_netmask
 }
 
-module "openvpn" {
-  source = "./openvpn"
+# module "openvpn" {
+#   source = "./openvpn"
 
-  name           = var.name
-  vpc_id         = module.vpc.vpc_id
-  ec2_subnet_ids = module.vpc.public_subnets
-  ami_id         = var.openvpn_ami_id
-  instance_type  = var.openvpn_instance_type
-}
+#   name           = var.name
+#   vpc_id         = module.vpc.vpc_id
+#   ec2_subnet_ids = module.vpc.public_subnets
+#   ami_id         = var.openvpn_ami_id
+#   instance_type  = var.openvpn_instance_type
+# }
